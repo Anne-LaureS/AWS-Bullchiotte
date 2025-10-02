@@ -1,4 +1,4 @@
-Bienvenue sur le repo # AWS-Bullchiotte 
+Bienvenue sur le repo **AWS-Bullchiotte** 
 
 Ce projet illustre la mise en place d'un site web statique sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
 
@@ -57,7 +57,6 @@ server {
         try_files $uri $uri/ =404;
     }
 }
-```
 
 3. **Tester la configuration et redémarrer Nginx :**
 
@@ -67,12 +66,10 @@ sudo systemctl restart nginx
 4. **Accéder au site via navigateur :**
 
 http://<YOUR_PUBLIC_IP>/
-```
 
 5. **Exécuter les scripts Python :**
 
 python3 1-FuckBienLaTerre.py
-```
 
 ---
 
@@ -86,7 +83,6 @@ AWS-Bullchiotte/
 ├─ 1-FuckBienLaTerre.py  # Script pour gérer EC2 et S3
 ├─ scripts/            # Scripts JS (si applicable)
 └─ README.md           # Ce fichier
-```
 
 ---
 
@@ -97,7 +93,8 @@ AWS-Bullchiotte/
 * Toujours vérifier la configuration Nginx avant de redémarrer : `sudo nginx -t`.
 * Pour le script Python, veillez à avoir les permissions nécessaires sur AWS.
 
+---
+
 ## 📬 Contact
 
 Pour plus d’infos ou questions : [Mon GitHub](https://github.com/Anne-LaureS)
-```
