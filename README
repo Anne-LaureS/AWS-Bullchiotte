@@ -1,0 +1,3 @@
+Lance un serveur web avec express et servez-le avec nginx.
+Ou utilise docker-compose pour lancer le serveur web et le reverse proxy.
+AWS EC2
