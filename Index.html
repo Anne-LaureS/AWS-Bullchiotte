@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard AWS</title>
+</head>
+<body>
+<h1>Instances EC2</h1>
+<ul>
+{% for i in instances %}
+    <li>{{ i.id }} - {{ i.state }} - {{ i.type }} - {{ i.public_ip }}</li>
+{% endfor %}
+</ul>
+
+<h1>Buckets S3</h1>
+<ul>
+{% for b in buckets %}
+    <li>{{ b.Name }}</li>
+{% endfor %}
+</ul>
+
+<h2>Créer un bucket</h2>
+<form method="POST" action="/create_bucket">
+    <input type="text" name="bucket_name" placeholder="Nom du bucket" required>
+    <button type="submit">Créer</button>
+</form>
+
+<h2>Supprimer un bucket</h2>
+<form method="POST" action="/delete_bucket">
+    <input type="text" name="bucket_name" placeholder="Nom du bucket" required>
+    <button type="submit">Supprimer</button>
+</form>
+
+<h2>Uploader un fichier</h2>
+<form method="POST" action="/upload_file" enctype="multipart/form-data">
+    <input type="text" name="bucket_name" placeholder="Nom du bucket" required>
+    <input type="file" name="file" required>
+    <button type="submit">Uploader</button>
+</form>
+
+<h2>Lancer une instance EC2</h2>
+<form method="POST" action="/launch_instance">
+    <button type="submit">Lancer</button>
+</form>
+
+<h2>Cloner un repo GitHub</h2>
+<form method="POST" action="/clone_repo">
+    <input type="url" name="repo_url" placeholder="URL du repo GitHub" required>
+    <button type="submit">Cloner</button>
+</form>
+
+</body>
+</html>
