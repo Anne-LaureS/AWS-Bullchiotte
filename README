@@ -1,3 +1,9 @@
 Lance un serveur web avec express et servez-le avec nginx.
 Ou utilise docker-compose pour lancer le serveur web et le reverse proxy.
 AWS EC2
+
+Avec le fichier FuckBienLaTerre.py vous aurez un script qui vous permettra de : 
+- lister les instances EC2,
+- lister les buckets S3,
+- pouvoir ajouter un bucket et uploader des fichiers dedans,
+- pouvoir supprimer un bucket,
