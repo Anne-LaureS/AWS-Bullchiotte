@@ -1,0 +1,51 @@
+cat <<EOF > /usr/share/nginx/html/AWS-Bullchiotte/index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>AWS Bullchiotte - Mon GitHub</title>
+<style>
+    body {
+        font-family: 'Courier New', monospace;
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    a {
+        color: #61dafb;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    .card {
+        background-color: #2d2d2d;
+        padding: 20px 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <h1>Bienvenue sur AWS Bullchiotte !</h1>
+        <p>Découvrez mon repo GitHub et mes projets :</p>
+        <p><a href="https://github.com/Anne-LaureS/AWS-Bullchiotte.git" target="_blank">Voir sur GitHub</a></p>
+    </div>
+</body>
+</html>
+EOF
