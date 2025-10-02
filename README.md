@@ -49,10 +49,8 @@ git clone https://github.com/Anne-LaureS/AWS-Bullchiotte.git
 server {
     listen 80;
     server_name <YOUR_PUBLIC_IP>;
-
     root /usr/share/nginx/html/AWS-Bullchiotte;
     index index.html;
-
     location / {
         try_files $uri $uri/ =404;
     }
