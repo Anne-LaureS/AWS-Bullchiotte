@@ -69,19 +69,7 @@ http://<YOUR_PUBLIC_IP>/
 
 5. **Exécuter les scripts Python :**
 
-python3 1-FuckBienLaTerre.py
-
----
-
-## 📁 Structure du repo
-
-AWS-Bullchiotte/
-│
-├─ index.html          # Page principale du site
-├─ style.css           # Feuille de style CSS
-├─ 1-FuckBienLaTerre.py  # Script pour gérer EC2 et S3
-├─ scripts/            # Scripts JS (si applicable)
-└─ README.md           # Ce fichier
+python 1-FuckBienLaTerre.py
 
 ---
 
