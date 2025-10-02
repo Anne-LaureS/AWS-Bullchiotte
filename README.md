@@ -46,7 +46,7 @@ git clone https://github.com/Anne-LaureS/AWS-Bullchiotte.git
 
 2. **Configurer Nginx pour pointer vers le dossier cloné :**
 
-'''
+"""
 server {
     listen 80;
     server_name <YOUR_PUBLIC_IP>;
@@ -58,7 +58,7 @@ server {
         try_files $uri $uri/ =404;
     }
 }
-'''
+"""
 
 3. **Tester la configuration et redémarrer Nginx :**
 
