@@ -50,11 +50,14 @@ server {
     listen 80;
     server_name <YOUR_PUBLIC_IP>;
     root /usr/share/nginx/html/AWS-Bullchiotte;
+    
     index index.html;
+    
     location / {
         try_files $uri $uri/ =404;
     }
 }
+
 
 3. **Tester la configuration et redémarrer Nginx :**
 
@@ -68,15 +71,6 @@ http://<YOUR_PUBLIC_IP>/
 5. **Exécuter les scripts Python :**
 
 python 1-FuckBienLaTerre.py
-
----
-
-## 💡 Bonnes pratiques
-
-* Tous les fichiers que vous voulez rendre visibles doivent être dans le repo.
-* Pour mettre à jour le site : `git pull origin main` dans le dossier cloné sur l’EC2.
-* Toujours vérifier la configuration Nginx avant de redémarrer : `sudo nginx -t`.
-* Pour le script Python, veillez à avoir les permissions nécessaires sur AWS.
 
 ---
 
