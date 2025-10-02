@@ -46,7 +46,6 @@ http://<YOUR_PUBLIC_IP>/
 * Tous les fichiers que vous voulez rendre visibles doivent être dans le repo.
 * Pour mettre à jour le site : `git pull origin main` dans le dossier cloné sur l’EC2.
 * Toujours vérifier la configuration Nginx avant de redémarrer : `sudo nginx -t`.
-* 
 ---
 
 ## 📬 Contact
