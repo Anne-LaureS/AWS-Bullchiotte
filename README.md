@@ -75,7 +75,6 @@ python3 1-FuckBienLaTerre.py
 
 ## 📁 Structure du repo
 
-```
 AWS-Bullchiotte/
 │
 ├─ index.html          # Page principale du site
