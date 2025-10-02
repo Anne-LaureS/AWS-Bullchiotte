@@ -7,3 +7,5 @@ Avec le fichier FuckBienLaTerre.py vous aurez un script avec liste déroulante q
 - lister les buckets S3,
 - pouvoir ajouter un bucket et uploader des fichiers dedans,
 - pouvoir supprimer un bucket
+
+Le fichier IndexRedirection permet de créer un message d'accueil sur le serveur Nginx
