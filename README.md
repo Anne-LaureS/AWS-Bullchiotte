@@ -1,10 +1,10 @@
-Bienvenue sur le repo **AWS-Bullchiotte** 
+# Bienvenue sur le repo **AWS-Bullchiotte** 
 
 📌 Ce projet illustre la mise en place d'un site web statique sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
 
 ---
 
-🎯  Objectifs
+# 🎯  Objectifs
 - Démontrer le déploiement d’un site web statique sur AWS EC2.  
 - Utiliser **Nginx** pour servir des fichiers HTML/CSS/JS.  
 - Automatiser le clonage et la mise à jour depuis GitHub.  
@@ -13,7 +13,7 @@ Bienvenue sur le repo **AWS-Bullchiotte**
 
 ---
 
-🐍 Scripts principaux 
+# 🐍 Scripts principaux 
 `1-FuckBienLaTerre.py`
 
 Ce script permet de gérer des ressources AWS via **Boto3** :
@@ -27,7 +27,7 @@ Ce script permet de gérer des ressources AWS via **Boto3** :
 
 ---
 
-⚙️ Prérequis
+# ⚙️ Prérequis
 
 - Compte AWS avec permissions sur EC2 et S3.  
 - Clé SSH (PEM/PPK) pour se connecter à l’instance.  
