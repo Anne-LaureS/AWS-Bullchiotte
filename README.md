@@ -1,10 +1,9 @@
 Bienvenue sur le repo **AWS-Bullchiotte** 
-
-Ce projet illustre la mise en place d'un site web statique sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
+📌 Ce projet illustre la mise en place d'un site web statique sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
 
 ---
 
-📌 Objectifs
+🎯  Objectifs
 - Démontrer le déploiement d’un site web statique sur AWS EC2.  
 - Utiliser **Nginx** pour servir des fichiers HTML/CSS/JS.  
 - Automatiser le clonage et la mise à jour depuis GitHub.  
