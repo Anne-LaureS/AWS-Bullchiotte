@@ -1,10 +1,13 @@
 # Bienvenue sur le repo **AWS-Bullchiotte** 
 
-📌 Ce projet illustre la mise en place d'un site web statique sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
+---
+
+📌 Ce projet illustre la mise en place d'un site web statique en Python sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
 
 ---
 
-# 🎯  Objectifs
+## 🎯  Objectifs
+
 - Démontrer le déploiement d’un site web statique sur AWS EC2.  
 - Utiliser **Nginx** pour servir des fichiers HTML/CSS/JS.  
 - Automatiser le clonage et la mise à jour depuis GitHub.  
@@ -13,8 +16,9 @@
 
 ---
 
-# 🐍 Scripts principaux 
-`1-FuckBienLaTerre.py`
+## 🐍 Scripts principaux 
+
+```1-FuckBienLaTerre.py```
 
 Ce script permet de gérer des ressources AWS via **Boto3** :
 
@@ -27,7 +31,7 @@ Ce script permet de gérer des ressources AWS via **Boto3** :
 
 ---
 
-# ⚙️ Prérequis
+## ⚙️ Prérequis
 
 - Compte AWS avec permissions sur EC2 et S3.  
 - Clé SSH (PEM/PPK) pour se connecter à l’instance.  
@@ -40,12 +44,13 @@ Ce script permet de gérer des ressources AWS via **Boto3** :
 ## 🛠️ Installation & Déploiement
 
 1. **Cloner le repo sur votre instance EC2 :**
-
+```
 cd /usr/share/nginx/html
 git clone https://github.com/Anne-LaureS/AWS-Bullchiotte.git
+```
 
 2. **Configurer Nginx pour pointer vers le dossier cloné :**
-
+```
 server {
     listen 80;
     server_name <YOUR_PUBLIC_IP>;
@@ -57,19 +62,23 @@ server {
         try_files $uri $uri/ =404;
     }
 }
+```
 
 3. **Tester la configuration et redémarrer Nginx :**
-
+```
 sudo nginx -t
 sudo systemctl restart nginx
+```
 
 4. **Accéder au site via navigateur :**
-
+```
 http://<YOUR_PUBLIC_IP>/
+```
 
 5. **Exécuter les scripts Python :**
-
+```
 python 1-FuckBienLaTerre.py
+```
 
 ---
 
