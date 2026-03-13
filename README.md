@@ -23,29 +23,29 @@ Il inclut également des manipulations via **AWS CLI** et **Boto3**, notamment :
 
 ## 🧩 Architecture globale
 ```
-┌──────────────────────────────┐
-│            AWS VPC           │
-│        10.0.0.0/16           │
-│                              │
-Internet        │   │   ┌──────────────────────┐    
-│               │   │   Public Subnet      │    │
-│               │   │     10.0.1.0/24      │    │
-▼               │   │                      │    │
-┌──────────────┐        │   │  EC2 Amazon Linux    │    │
-│  Client Web  │──────▶│   │  + Nginx             │    │
-└──────────────┘        │   │  + Git clone repo    │    │
-│   └──────────┬───────────┘     │
-│              │                 │
-│        Security Group          │
-│        (port 80 ouvert)        │
-│              │                 │
-│        Internet Gateway        │
-└──────────────┴─────────────────┘
-```
+                           ┌──────────────────────────────────┐
+                           │              AWS VPC             │
+                           │            10.0.0.0/16           │
+                           │                                  │
+                           │   ┌────────────────────────────┐ │
+                           │   │        Public Subnet       │ │
+                           │   │         10.0.1.0/24        │ │
+                           │   │                            │ │
+Internet ───────────────▶ │   │   EC2 Instance (Nginx)      │ │
+                           │   │   - Amazon Linux 2         │ │
+                           │   │   - Git clone du repo      │ │
+                           │   │   - Sert les pages HTML    │ │
+                           │   └──────────────┬─────────────┘ │
+                           │                  │               │
+                           │        Security Group (HTTP 80)  │
+                           │                  │               │
+                           │        Internet Gateway (IGW)    │
+                           └──────────────────┴───────────────┘
 
-- S3 : stockage / tests via scripts Python
-- IAM : permissions pour EC2 & S3
-- AWS CLI : gestion EC2 / S3 / EBS
+                     + S3 : stockage / tests via scripts Python
+                     + IAM : rôles & permissions
+                     + AWS CLI : gestion EC2 / S3 / EBS
+```
 
 ---
 
