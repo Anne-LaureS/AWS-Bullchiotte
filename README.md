@@ -1,4 +1,10 @@
-# Bienvenue sur le repo **AWS-Bullchiotte** 
+# 🌩️ AWS – Déploiement d’un site statique sur EC2 avec Nginx  
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws)
+![EC2](https://img.shields.io/badge/EC2-Amazon_Linux_2-blue)
+![S3](https://img.shields.io/badge/S3-Storage-red)
+![IAM](https://img.shields.io/badge/IAM-Permissions-yellow)
+![VPC](https://img.shields.io/badge/VPC-Networking-green)
+![Status](https://img.shields.io/badge/Status-Fonctionnel-brightgreen)
 
 📌 Ce projet illustre la mise en place d'un site web statique en Python sur une instance **EC2 Amazon Linux** avec **Nginx**, en utilisant un repo GitHub comme source du contenu HTML.  
 
